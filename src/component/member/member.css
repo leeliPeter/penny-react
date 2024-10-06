@@ -1,0 +1,193 @@
+/* #region membership */
+.membership{
+    background-image: linear-gradient(to left top,  rgb(4, 8, 60), #2d2d2d, rgb(6, 82, 119))
+
+}
+.membership .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+}
+.membership .logo img{
+    width: 150px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    border-radius: 50%;
+}
+.membership nav{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+   background-color: #2d2d2d;
+    border-radius: 50px;
+    margin: 30px 0;
+    margin-top: 0%;
+}
+.membership nav div{
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.membership nav .login{
+    background-color: var(--active-color);
+    border: 1px solid var(--active-border);
+}
+/* #endregion membership */
+
+/* #region signIn */    
+.signIn {
+    width: 400px;
+    position: absolute;
+    top: 330px;
+    transition-property: all;
+    transition-duration: 0.8s;
+    right: calc(50% - 200px);
+    opacity: 1;
+}
+.signIn  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #535353;
+    /* color: #202020; */
+    box-sizing: border-box;
+}
+.signIn form label{
+    margin-left: 10px;
+}
+.signIn form>div{
+    margin: 10px 0;
+    width: 100%;
+}
+.signIn form .login-reminder{
+    margin-left: 10px;
+    color:rgb(218, 1, 1);
+    overflow: hidden;
+    height: 0px;
+    transition-property: all;
+    transition-duration: 0.8s;
+}
+.signIn  form input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #535353;
+    background-color: #202020;
+    box-sizing: border-box;
+    color: white;
+}
+.signIn form input:focus{
+    border: 1px solid #5585c1;
+}
+.signIn  form button{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid var(--active-border);
+    color:rgb(243, 243, 243);
+    background-color: var(--active-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* #endregion signIn */
+
+/* #region signUp */
+
+.signUp {
+    width: 400px;
+    position: absolute;
+    top: 330px;
+    transition-property: all;
+    transition-duration: 0.8s;
+    left: -30%;
+    opacity: 0;
+}
+.signUp  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #535353;
+    /* color: #202020; */
+    box-sizing: border-box;
+}
+.signUp form>div:first-child{
+    position: relative;
+}
+.signUp form>div:first-child .email-reminder{
+    position: absolute;
+    bottom: -12px;
+    left: 10px;
+    color: rgb(218, 1, 1);
+}
+.signUp  form .reminder{
+    transition-property: all;
+    transition-duration: 0.8s;
+    height: 0px;
+    overflow: hidden;
+}
+.signUp  form .reminder.visible {
+    height: 58px;
+  }
+.signUp  form .reminder ul{
+    margin-left: 20px;
+    margin-top: -3px;
+    list-style-type: disc;
+}
+.signUp  form .reminder ul li{
+    margin: 10px 0;
+}
+.signUp form>div{
+    margin: 10px 0;
+    width: 100%;
+}
+.signUp form label{
+    margin-left: 10px;
+}
+.signUp  form input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #535353;
+    background-color: #202020;
+    box-sizing: border-box;
+    color: white;
+}
+/* focus */
+.signUp form input:focus{
+    border: 1px solid #5585c1;
+}
+.signUp  form button{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid var(--active-border);
+    color: rgb(243, 243, 243);
+    background-color: var(--active-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* #endregion signUp */
+

@@ -1,0 +1,22 @@
+/* #region main */
+main .container{
+    height: auto;
+    min-height: 100vh;
+    margin-top: 20px;
+}
+main img{
+    width: 100%;
+    margin-bottom: 1em;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+main img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+main .images{
+    columns: 400px;
+}
+
+
+/* #endregion main */

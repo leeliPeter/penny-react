@@ -1,0 +1,107 @@
+/* #region header */
+header .container{
+    height: 60px;
+    /* background-color: rgb(107, 91, 91); */
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+    }
+header .icon img{
+    border-radius: 50%;
+    width: 40px;
+}
+header .email{
+    margin-left: 20px;
+    color: var(--font-color);
+    font-size: 1.2em;
+}
+header .container>.userIcon>img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+header .userMenu-container {
+    visibility: hidden;
+    opacity: 0;
+    /* transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+header .userMenu-container.visible {
+    visibility: visible;
+    opacity: 1;
+}
+header .userMenu {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    width: 0; /* Set to fixed width since we're not using inline styles here */
+    overflow: hidden;
+    background-color: var(--active-color);
+    transition: width 0.3s ease-in-out; /* Transition the width */
+}
+header .userMenu.visible{
+    width: 300px;
+}
+header .userMenu .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+header .userMenu .email{
+    color:var(--font-color);
+    font-size: 16px;
+}
+header .userMenu .header>div:first-child{
+    display: flex;
+    align-items: center;
+}
+header .userMenu .header .second-userIcon img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* cover in the center */
+    object-fit: cover;
+
+}
+header .userMenu .header .exit{
+    font-size: 20px;
+    cursor: pointer;
+}
+header .userMenu .menu{
+    display: flex;
+    flex-direction: column;
+    padding:  10px;
+}
+header .userMenu .menu ul li{
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+header .userMenu .menu ul li div{
+    margin-left: 10px;
+}
+header .userMenu .menu .icon{
+    font-size: 25px;
+}
+header .userMenu .menu ul li:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+/* #endregion header */

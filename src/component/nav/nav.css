@@ -1,0 +1,19 @@
+/* #region nav */
+nav{
+    border-bottom: #535353 1px solid;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    }
+nav .container{
+    display: flex;
+    align-items: center;
+}
+nav .container li{
+    margin: 0 15px;
+    padding: 10px 5px;
+    cursor: pointer;
+}
+nav .container li.active{
+    border-bottom: 3px solid var(--active-color);
+}
+/* #endregion nav */
